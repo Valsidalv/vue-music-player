@@ -42,12 +42,12 @@ export default {
         const messages = {
           required: `Field ${context.field} is required.`,
           min: `Field ${context.field} is too short.`,
-          max: `Field $context.field} is too long.`,
+          max: `Field ${context.field} is too long.`,
           alfaSpaces: `Field ${context.field} can only contain letters and spaces.`,
-          email: `Field ${context.field} must valid email.`,
-          min_value: `Field ${context} is too low.`,
-          max_value: `Field ${context} is too high.`,
-          excludded: `You are not allowed to use this value for Field ${context}.`,
+          email: `Field ${context.field} must be valid email.`,
+          min_value: `Field ${context.field} is too low.`,
+          max_value: `Field ${context.field} is too high.`,
+          excluded: `You are not allowed to use this value for field ${context.field}.`,
           country_excluded: "We do not accept users from this country.",
           password_mismatch: "Passwords do not match.",
           tos: "You must accept the terms of service."
