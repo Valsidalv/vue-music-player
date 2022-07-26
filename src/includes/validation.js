@@ -11,7 +11,6 @@ import {
   min,
   max,
   alpha_spaces as alfaSpaces,
-  alpha_spaces,
   email,
   min_value as minVal,
   max_value as maxVal,
@@ -53,11 +52,15 @@ export default {
           tos: "You must accept the terms of service."
         };
 
-        let message = messages[context.rule.name] ? message[context.rule.name] :
+        let message = messages[context.rule.name] ? messages[context.rule.name] :
           `Field ${context.field} is invalid.`;
 
         return message;
       },
+      validateOnBlur: true,
+      validateOnChange: true,
+      validateOnInput: false,
+      validateOnModelUpdate: true
     });
   }
 }
